@@ -1,10 +1,11 @@
 # sample_pathway.py
 import pathway as pw
 
-# Example: Create a simple table and print
+# Simple Pathway program that prints a message
 def main():
-    table = pw.debug.table([("Hello from Pathway inside Docker!",)])
-    table.print()
+    # Create a debug table
+    t = pw.debug.Table([("Hello from Pathway inside Docker!",)])
+    t.print()
 
 if __name__ == "__main__":
     main()
